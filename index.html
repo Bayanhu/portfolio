@@ -1,328 +1,466 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Bayan Al Maamari | Portfolio</title>
+    <title>Bayan Hussein | AI Developer</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header class="header">
-        <nav class="navbar container">
+    <!-- Navbar -->
+    <nav class="navbar">
 
-            <a href="#home" class="brand">
-                <span class="brand-mark">B</span>
-                <span class="brand-name">Bayan</span>
-            </a>
+    <div class="logo">
+        BH<span>.</span>
+    </div>
 
-            <button class="menu-toggle" id="menuToggle">
-                ☰
+    <button class="menu-toggle" id="menu-toggle" type="button">
+        ☰
+    </button>
+
+    <div class="nav-links" id="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+</nav>
+
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="hello">HELLO, I'M</p>
+
+            <h1>Bayan Hussein</h1>
+
+            <h2>AI Developer & Creator</h2>
+
+            <p class="description">
+                I build intelligent digital experiences
+                and turn creative ideas into real-world solutions.
+            </p>
+
+            <div class="buttons">
+
+                <a href="#projects" class="btn primary">
+                    View My Work
+                </a>
+
+                <a href="#contact" class="btn secondary">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+<div class="ai-orb">
+
+    <div class="orb-core"></div>
+
+    <div class="orbit orbit-one">
+        <span></span>
+    </div>
+
+    <div class="orbit orbit-two">
+        <span></span>
+    </div>
+
+    <div class="orbit orbit-three">
+        <span></span>
+    </div>
+
+</div>
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about reveal" id="about">
+
+        <div class="about-container">
+
+            <div class="about-text">
+
+                <p class="section-label">
+                    ABOUT ME
+                </p>
+
+                <h2>
+                    Building ideas with AI & code.
+                </h2>
+
+                <p>
+                    I'm Bayan Hussein, an Artificial Intelligence graduate
+                    passionate about building smart digital products and
+                    transforming creative ideas into real-world solutions.
+                </p>
+
+                <p>
+                    I enjoy working with AI, web development, and innovative
+                    applications that solve meaningful problems.
+                </p>
+
+            </div>
+
+
+            <div class="about-card">
+
+                <div class="stat">
+                    <h3>AI</h3>
+                    <p>Developer</p>
+                </div>
+
+                <div class="stat">
+                    <h3>1st</h3>
+                    <p>Place Award</p>
+                </div>
+
+                <div class="stat">
+                    <h3>∞</h3>
+                    <p>Ideas</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+<!-- Projects Section -->
+<section class="projects reveal" id="projects">
+
+    <div class="projects-container">
+
+        <p class="section-label">PROJECTS</p>
+
+        <h2>Things I've Built.</h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <div class="project-number">01</div>
+
+                <h3>Award-Winning Mobile App</h3>
+
+                <p>
+                    A smart mobile application designed to solve real-world
+                    problems through innovative technology and user-focused design.
+                </p>
+
+                <div class="project-tags">
+                    <span>AI</span>
+                    <span>Mobile App</span>
+                    <span>UI/UX</span>
+                </div>
+
+                <a href="#" class="project-link">
+                    View Project →
+                </a>
+            </div>
+
+
+            <div class="project-card">
+                <div class="project-number">02</div>
+
+                <h3>AI Project</h3>
+
+                <p>
+                    An intelligent project focused on using Artificial Intelligence
+                    to analyze data and create smarter digital solutions.
+                </p>
+
+                <div class="project-tags">
+                    <span>AI</span>
+                    <span>Machine Learning</span>
+                    <span>Data</span>
+                </div>
+
+                <a href="#" class="project-link">
+                    View Project →
+                </a>
+            </div>
+
+
+            <div class="project-card">
+                <div class="project-number">03</div>
+
+                <h3>Web Application</h3>
+
+                <p>
+                    A modern web application built with a focus on clean design,
+                    usability, and responsive digital experiences.
+                </p>
+
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <a href="#" class="project-link">
+                    View Project →
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+<!-- Skills Section -->
+<section class="skills reveal" id="skills">
+
+    <div class="skills-container">
+
+        <p class="section-label">MY SKILLS</p>
+        <h2>What I Work With.</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <div class="skill-icon">🧠</div>
+                <h3>Artificial Intelligence</h3>
+                <p>
+                    Building intelligent solutions and exploring
+                    AI-powered applications.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🤖</div>
+                <h3>Machine Learning</h3>
+                <p>
+                    Working with data and machine learning
+                    techniques to build smart systems.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">💻</div>
+                <h3>Web Development</h3>
+                <p>
+                    Creating modern and responsive websites
+                    and web applications.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">📊</div>
+                <h3>Data Analysis</h3>
+                <p>
+                    Exploring and analyzing data to discover
+                    useful insights and patterns.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">⚙️</div>
+                <h3>Programming</h3>
+                <p>
+                    Developing applications and solving
+                    problems through clean, structured code.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">✨</div>
+                <h3>UI / UX</h3>
+                <p>
+                    Designing clean digital experiences
+                    focused on simplicity and usability.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+</section>
+<!-- Contact Section -->
+<section class="contact reveal" id="contact">
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <p class="section-label">CONTACT</p>
+
+            <h2>Let's Work Together.</h2>
+
+            <p>
+                Have an idea, project, or opportunity?
+                I'd love to hear about it.
+            </p>
+
+            <div class="contact-details">
+
+                <div class="contact-item">
+                    <span>Email</span>
+                    <p>bayanhussein1b@gmail.com</p>
+                </div>
+
+                <div class="contact-item">
+                    <span>Location</span>
+                    <p>Oman</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <form class="contact-form" onsubmit="sendEmail(event)">
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your email">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="6" placeholder="Tell me about your project..."></textarea>
+            </div>
+
+            <button type="submit" class="send-btn">
+                Send Message
             </button>
 
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">الرئيسية</a></li>
-                <li><a href="#about">نبذة عني</a></li>
-                <li><a href="#education">التعليم</a></li>
-                <li><a href="#skills">المهارات</a></li>
-                <li><a href="#projects">الأعمال</a></li>
-                <li><a href="#contact">تواصل معي</a></li>
-            </ul>
-
-        </nav>
-    </header>
-
-
-    <main>
-
-        <!-- Hero Section -->
-        <section class="hero" id="home">
-            <div class="hero-pattern"></div>
-
-            <div class="container hero-content">
-
-                <div class="hero-text">
-                    <p class="eyebrow">Artificial Intelligence Graduate</p>
-
-                    <h1>
-                        بيان حسين<br>
-                        <span>المعمري</span>
-                    </h1>
-
-                    <p class="hero-description">
-                        خريجة ذكاء اصطناعي شغوفة بتطوير الحلول التقنية،
-                        تحليل البيانات، وبناء التطبيقات الذكية التي تعالج
-                        تحديات واقعية بطريقة مبتكرة.
-                    </p>
-
-                    <div class="hero-buttons">
-                        <a href="#about" class="btn btn-primary">اكتشفي المزيد</a>
-                        <a href="#contact" class="btn btn-outline">تواصلي معي</a>
-                    </div>
-                </div>
-
-                <div class="hero-card">
-                    <div class="card-line"></div>
-
-                    <div class="initials">BA</div>
-
-                    <p class="card-label">Personal Portfolio</p>
-                    <h3>Bayan Al Maamari</h3>
-
-                    <div class="card-footer">
-                        <span>AI</span>
-                        <span>01 / 2026</span>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="scroll-indicator">
-                <span>اكتشفي قصتي</span>
-                <div class="scroll-line"></div>
-            </div>
-        </section>
-
-
-        <!-- About Section -->
-        <section class="section about-section" id="about">
-            <div class="container two-columns">
-
-                <div class="section-heading">
-                    <span class="section-number">01</span>
-                    <p class="small-title">من أنا؟</p>
-                    <h2>شغف بالتقنية،<br><span>وفكر لصناعة الفرق.</span></h2>
-                </div>
-
-                <div class="about-content">
-                    <p class="large-text">
-                        أنا بيان حسين المعمري، خريجة ذكاء اصطناعي ومهتمة بتطوير
-                        التطبيقات وتحليل البيانات وبناء الأنظمة الذكية.
-                    </p>
-
-                    <p>
-                        أؤمن بأن التقنية ليست مجرد أدوات، بل وسيلة لصناعة حلول
-                        عملية ومؤثرة. أحرص دائمًا على تطوير مهاراتي وتعلم
-                        التقنيات الحديثة وتحويل الأفكار إلى تجارب رقمية مفيدة.
-                    </p>
-
-                    <div class="about-details">
-                        <div>
-                            <span>الموقع</span>
-                            <strong>صحار، سلطنة عمان</strong>
-                        </div>
-
-                        <div>
-                            <span>التخصص</span>
-                            <strong>الذكاء الاصطناعي</strong>
-                        </div>
-
-                        <div>
-                            <span>اللغات</span>
-                            <strong>العربية، الإنجليزية</strong>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- Education Section -->
-        <section class="section education-section" id="education">
-            <div class="container">
-
-                <div class="center-heading">
-                    <span class="section-number">02</span>
-                    <p class="small-title">المسيرة التعليمية</p>
-                    <h2>رحلة من التعلم<br><span>والتطور المستمر.</span></h2>
-                </div>
-
-                <div class="timeline">
-
-                    <div class="timeline-item">
-                        <div class="timeline-date">2021 — 2026</div>
+        </form>
+
+    </div>
+
+</section>
+<script>
+    function sendEmail(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        const subject = encodeURIComponent("Portfolio Message from " + name);
+
+        const body = encodeURIComponent(
+            "Name: " + name + "\n" +
+            "Email: " + email + "\n\n" +
+            "Message:\n" + message
+        );
+
+        window.location.href =
+            "mailto:bayanhussein1b@gmail.com?subject=" + subject + "&body=" + body;
+    }
+</script>
+<script>
+    const reveals = document.querySelectorAll(".reveal");
+
+    function revealOnScroll() {
+        reveals.forEach((section) => {
+            const windowHeight = window.innerHeight;
+            const sectionTop = section.getBoundingClientRect().top;
+            const revealPoint = 120;
+
+            if (sectionTop < windowHeight - revealPoint) {
+                section.classList.add("active");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+
+    revealOnScroll();
+</script>
+<script>
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+            }
+        });
+    }, {
+        threshold: 0.15
+    });
+
+    document.querySelectorAll(".reveal").forEach((section) => {
+        observer.observe(section);
+    });
+</script>
+<script>
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll(".nav-links a");
+
+    const navObserver = new IntersectionObserver(
+        (entries) => {
+
+            entries.forEach((entry) => {
+
+                if (entry.isIntersecting) {
+
+                    const currentId = entry.target.id;
+
+                    navLinks.forEach((link) => {
+                        link.classList.remove("active");
+
+                        if (link.getAttribute("href") === "#" + currentId) {
+                            link.classList.add("active");
+                        }
+                    });
+
+                }
+
+            });
+
+        },
+        {
+            rootMargin: "-35% 0px -55% 0px",
+            threshold: 0
+        }
+    );
+
+    sections.forEach((section) => {
+        navObserver.observe(section);
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const menuToggle = document.getElementById("menu-toggle");
+        const navMenu = document.getElementById("nav-links");
+
+        menuToggle.addEventListener("click", function () {
 
-                        <div class="timeline-content">
-                            <h3>بكالوريوس علوم الحاسب</h3>
-                            <h4>تخصص الذكاء الاصطناعي</h4>
-                            <p>Gulf College — سلطنة عمان</p>
-                            <p class="muted">
-                                دراسة البرمجة، تحليل البيانات، تعلم الآلة
-                                وتطوير التطبيقات الذكية.
-                            </p>
-                        </div>
-                    </div>
+            navMenu.classList.toggle("active");
 
-                    <div class="timeline-item">
-                        <div class="timeline-date">2021</div>
+            if (navMenu.classList.contains("active")) {
+                menuToggle.textContent = "✕";
+            } else {
+                menuToggle.textContent = "☰";
+            }
 
-                        <div class="timeline-content">
-                            <h3>شهادة التعليم العام</h3>
-                            <h4>مدرسة صحار للبنات</h4>
-                            <p>صحار، سلطنة عمان</p>
-                        </div>
-                    </div>
+        });
 
-                </div>
+        document.querySelectorAll("#nav-links a").forEach(function (link) {
 
-            </div>
-        </section>
+            link.addEventListener("click", function () {
+                navMenu.classList.remove("active");
+                menuToggle.textContent = "☰";
+            });
 
+        });
 
-        <!-- Skills Section -->
-        <section class="section skills-section" id="skills">
-            <div class="container two-columns">
-
-                <div class="section-heading">
-                    <span class="section-number">03</span>
-                    <p class="small-title">مجالات الخبرة</p>
-                    <h2>مهارات تجمع بين<br><span>الإبداع والتحليل.</span></h2>
-                </div>
-
-                <div class="skills-grid">
-
-                    <div class="skill-card">
-                        <span class="skill-icon">01</span>
-                        <h3>الذكاء الاصطناعي</h3>
-                        <p>تطبيق مفاهيم الذكاء الاصطناعي وتعلم الآلة على حلول عملية.</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <span class="skill-icon">02</span>
-                        <h3>تحليل البيانات</h3>
-                        <p>تنظيم البيانات ومعالجتها وتحويلها إلى معلومات مفيدة.</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <span class="skill-icon">03</span>
-                        <h3>تطوير التطبيقات</h3>
-                        <p>تصميم وبناء تطبيقات سهلة الاستخدام وتركز على احتياجات المستخدم.</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <span class="skill-icon">04</span>
-                        <h3>قواعد البيانات</h3>
-                        <p>تصميم وإدارة قواعد البيانات بطريقة منظمة وفعالة.</p>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- Projects Placeholder -->
-        <section class="section projects-section" id="projects">
-            <div class="container">
-
-                <div class="projects-header">
-                    <div>
-                        <span class="section-number">04</span>
-                        <p class="small-title">مساحة الأعمال</p>
-                        <h2>مشاريعي<br><span>وأعمالي القادمة.</span></h2>
-                    </div>
-
-                    <p>
-                        سيتم إضافة المشاريع والأعمال هنا لاحقًا بطريقة منظمة
-                        تعكس التجربة والنتائج والمهارات المستخدمة.
-                    </p>
-                </div>
-
-                <div class="projects-placeholder">
-
-                    <div class="placeholder-icon">+</div>
-
-                    <h3>مساحة مخصصة للأعمال</h3>
-
-                    <p>
-                        يمكنك إضافة مشاريعك هنا مع الصور، الوصف،
-                        التقنيات المستخدمة، وروابط العرض.
-                    </p>
-
-                    <span class="placeholder-label">Coming Soon</span>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- Strengths Section -->
-        <section class="quote-section">
-            <div class="container">
-                <div class="quote-mark">“</div>
-
-                <blockquote>
-                    أطمح إلى توظيف التكنولوجيا والذكاء الاصطناعي
-                    لبناء حلول مبتكرة تحدث أثرًا حقيقيًا.
-                </blockquote>
-
-                <div class="quote-line"></div>
-                <p>Bayan Al Maamari</p>
-            </div>
-        </section>
-
-
-        <!-- Contact Section -->
-        <section class="section contact-section" id="contact">
-            <div class="container contact-layout">
-
-                <div>
-                    <span class="section-number">05</span>
-                    <p class="small-title">لنتواصل</p>
-
-                    <h2>
-                        لديك فكرة أو فرصة؟
-                        <br>
-                        <span>يسعدني التواصل معك.</span>
-                    </h2>
-                </div>
-
-                <div class="contact-info">
-
-                    <a href="mailto:Bayanhussein1b@gmail.com" class="contact-item">
-                        <span class="contact-label">البريد الإلكتروني</span>
-                        <strong>Bayanhussein1b@gmail.com</strong>
-                    </a>
-
-                    <a href="tel:97877360" class="contact-item">
-                        <span class="contact-label">رقم الهاتف</span>
-                        <strong>97877360</strong>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/bayan-almaamari-a1370b416"
-                       target="_blank"
-                       class="contact-item">
-                        <span class="contact-label">LinkedIn</span>
-                        <strong>View Profile ↗</strong>
-                    </a>
-
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-content">
-            <p>© 2026 Bayan Al Maamari. All rights reserved.</p>
-            <p>Designed with purpose.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+    });
+</script>
 </body>
+
 </html>

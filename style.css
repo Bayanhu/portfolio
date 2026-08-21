@@ -88,7 +88,7 @@ html[dir="rtl"] .ticker div{animation-direction:reverse}
 .language-toggle:hover{background:#e5f5ef;border-color:#215b47;color:#215b47;transform:translate(-2px,-2px);box-shadow:5px 5px 0 #d8cef0}
 .language-symbol{font-size:10px;color:#7b69b8}
 .contact-intro{max-width:620px;margin:-60px 0 55px;font-size:17px;line-height:1.8;color:#3b574d}
-.contact-links{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #8f81af;border-bottom:1px solid #8f81af;margin-bottom:50px}
+.contact-links{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid #8f81af;border-bottom:1px solid #8f81af;margin-bottom:50px}
 .contact-links a{min-height:145px;padding:28px 26px;display:grid;grid-template-columns:1fr auto;align-content:space-between;gap:26px;border-right:1px solid #8f81af;transition:background .25s,color .25s}
 .contact-links a:last-child{border-right:0}
 .contact-links a:hover{background:#fbf9ff;color:#215b47}
@@ -106,3 +106,83 @@ html[dir="rtl"] .contact-links a:last-child{border-left:0}
 html[dir="rtl"] .contact-links small{font-family:"Noto Kufi Arabic",sans-serif;letter-spacing:0}
 @media(max-width:800px){.contact-links{grid-template-columns:1fr}.contact-links a{border-right:0;border-left:0;border-bottom:1px solid #8f81af;min-height:120px}.contact-links a:last-child{border-bottom:0}html[dir="rtl"] .contact-links a{border-left:0}.contact-intro{margin:-25px 0 40px}}
 @media(max-width:600px){.language-toggle{min-width:82px;padding:8px 10px;box-shadow:2px 2px 0 #d8cef0}.language-symbol{display:none}.contact-links strong{font-size:16px}.contact h2{margin-bottom:55px}}
+
+/* Polished phone layout */
+@media(max-width:600px){
+  body{overflow-x:hidden}
+  header{height:74px;padding:0 5vw}
+  .mark{width:45px;height:45px}
+  .header-actions{gap:12px}
+  .language-toggle{min-width:76px;height:36px;padding:7px 10px;font-size:10px;background:#fbf9ff}
+  .menu{display:block;padding:8px 0;color:#215b47;font-size:10px;letter-spacing:1px}
+  header nav{top:74px;padding:28px 5vw;gap:22px;background:#fbf9fff5;border-bottom:1px solid #d8cef0;box-shadow:0 14px 35px #49386b18}
+  header nav a{width:100%;padding:9px 0;font-size:11px;color:#215b47}
+  .hero{min-height:100svh;padding:108px 5vw 38px}
+  .hero-top{font-size:9px;line-height:1.7}
+  .hero-title{margin-top:auto;margin-bottom:auto}
+  .hero-title p{margin-bottom:14px;font-size:12px}
+  .hero h1{font-size:clamp(62px,19vw,92px);line-height:.82;letter-spacing:-.065em}
+  .hero-bottom{margin-top:30px;gap:0}
+  .hero-bottom>p{max-width:92%;font-size:15px;line-height:1.75}
+  .ticker{padding:18px 0}
+  .ticker div{gap:28px}
+  .ticker span{font-size:11px;letter-spacing:2px}
+  .about,.work,.skills{padding:82px 5vw}
+  .section-no{font-size:10px}
+  .about-copy,.skills-title{margin-top:32px}
+  .about h2,.work h2,.skills h2{font-size:clamp(43px,13vw,62px);line-height:.98;letter-spacing:-.045em}
+  .about-grid{gap:18px;margin-top:36px}
+  .about-grid p,.work-head>p,.skills-title>p{font-size:14px;line-height:1.85}
+  .facts{margin-top:55px}
+  .facts article{min-height:auto;padding:28px 0}
+  .facts h3{margin:25px 0 10px;font-size:20px}
+  .work-head{gap:32px}
+  .work-head h2{margin-top:28px}
+  .project-list{margin-top:55px}
+  .project{gap:0;padding:28px 0}
+  .project-visual{height:290px;padding:27px}
+  .browser{width:96%;height:88%}
+  .screen span{font-size:34px;letter-spacing:-1.5px}
+  .project-info{min-height:auto;padding:30px 0 10px}
+  .project-name{grid-template-columns:26px 1fr 25px;gap:9px}
+  .project-name h3{font-size:32px;line-height:1.1;letter-spacing:-1.5px}
+  .project-info>p{margin:30px 0 24px;font-size:14px;line-height:1.8}
+  .skills-title{gap:30px}
+  .skill-grid{margin-top:55px}
+  .skill-grid article{padding:30px 0 34px}
+  .skill-grid h3{font-size:22px;margin:24px 0 10px}
+  .skill-grid p{font-size:14px;margin-bottom:0}
+  .tools{margin-top:42px;gap:7px}
+  .tools span{padding:9px 13px;font-size:9px}
+  .contact{padding:82px 5vw}
+  .contact>p{font-size:10px}
+  .contact h2{font-size:clamp(47px,14vw,68px);line-height:.92;letter-spacing:-.05em;margin:35px 0 45px}
+  .contact-intro{margin:0 0 35px;font-size:14px;line-height:1.85}
+  .contact-links{margin-bottom:35px}
+  .contact-links a{min-height:105px;padding:22px 18px;gap:18px}
+  .contact-links small{font-size:9px}
+  .contact-links strong{font-size:15px;letter-spacing:0}
+  .contact-row{flex-direction:column;align-items:flex-start;gap:18px;font-size:9px;line-height:1.7}
+  footer{padding:38px 5vw;grid-template-columns:55px 1fr;gap:18px}
+  .footer-mark{width:55px;height:55px}
+  .footer-mark+p{font-size:16px}
+  footer>small{grid-column:1/3;line-height:1.6}
+  html[dir="rtl"] .hero h1{letter-spacing:-.035em}
+  html[dir="rtl"] .about h2,html[dir="rtl"] .work h2,html[dir="rtl"] .skills h2,html[dir="rtl"] .contact h2{font-size:clamp(37px,10.8vw,54px);line-height:1.45;letter-spacing:-.025em}
+  html[dir="rtl"] .project-name h3{font-size:27px;line-height:1.5;letter-spacing:0}
+  html[dir="rtl"] .contact-links a{text-align:right}
+}
+
+@media(max-width:370px){
+  .header-actions{gap:8px}
+  .language-toggle{min-width:68px;padding:6px 8px}
+  .hero h1{font-size:18vw}
+  .project-visual{height:255px;padding:20px}
+  .contact-links strong{font-size:14px}
+}
+
+/* Minimal language label — matches the Menu link */
+.language-toggle,.language-toggle:hover{min-width:auto;height:auto;padding:8px 0;border:0;border-radius:0;background:transparent;box-shadow:none;color:#215b47;transform:none;font:10px "DM Mono";font-weight:400;letter-spacing:1px;text-transform:uppercase}
+.language-symbol{display:none}
+html[dir="rtl"] .language-toggle,html[dir="rtl"] .language-toggle:hover{font:10px "Noto Kufi Arabic",sans-serif;letter-spacing:0}
+@media(max-width:600px){.language-toggle,.language-toggle:hover{min-width:auto;height:auto;padding:8px 0;border:0;background:transparent;box-shadow:none;font-size:10px}}

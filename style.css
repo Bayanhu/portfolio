@@ -53,3 +53,30 @@ footer{background:#fffaf4;color:#28252d}
 .project-visual.almahra{background:linear-gradient(145deg,#d8cef0,#a994ce)}
 .mark,.footer-mark{border:0;outline:0;background:transparent;overflow:visible}
 .mark img,.footer-mark img{filter:invert(1);mix-blend-mode:multiply;border:0;outline:0;background:transparent}
+
+/* Arabic / English language switcher */
+.header-actions{display:flex;align-items:center;gap:26px}
+.language-toggle{border:1px solid var(--line);border-radius:30px;background:transparent;color:#28252d;padding:9px 15px;cursor:pointer;font:10px "DM Mono";letter-spacing:.5px;transition:.25s}
+.language-toggle:hover{background:var(--blue);border-color:var(--blue);color:#fff}
+html[dir="rtl"] body{font-family:Tahoma,"Segoe UI",Arial,sans-serif}
+html[dir="rtl"] .hero-title,html[dir="rtl"] .about-copy,html[dir="rtl"] .work-head,html[dir="rtl"] .skills-title,html[dir="rtl"] .project-info{text-align:right}
+html[dir="rtl"] .hero h1{letter-spacing:-.035em}
+html[dir="rtl"] .project-info{padding:35px 0 30px 4vw}
+html[dir="rtl"] .facts article{border-right:0;border-left:1px solid var(--line)}
+html[dir="rtl"] .facts article:first-child{padding-left:35px;padding-right:0}
+html[dir="rtl"] .facts article:last-child{border-left:0}
+html[dir="rtl"] .skill-grid article:nth-child(odd){border-right:0;border-left:1px solid var(--line);padding-left:40px;padding-right:0}
+html[dir="rtl"] .skill-grid article:nth-child(even){padding-right:40px;padding-left:0}
+html[dir="rtl"] .screen b{right:auto;left:18px}
+html[dir="rtl"] .scroll-note{right:auto;left:4vw;transform:rotate(-90deg) translateX(-50%);transform-origin:left}
+html[dir="rtl"] .ticker div{animation-direction:reverse}
+@media(max-width:900px){
+  .header-actions{gap:14px}
+  html[dir="rtl"] header nav{align-items:flex-start}
+  html[dir="rtl"] .project-info{padding-left:0}
+  html[dir="rtl"] .facts article{border-left:0}
+  html[dir="rtl"] .facts article:first-child{padding-left:0}
+  html[dir="rtl"] .skill-grid article:nth-child(odd){border-left:0;padding-left:0}
+  html[dir="rtl"] .skill-grid article:nth-child(even){padding-right:0}
+}
+@media(max-width:600px){.language-toggle{padding:8px 11px;font-size:9px}.header-actions{gap:8px}}

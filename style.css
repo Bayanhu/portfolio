@@ -50,7 +50,7 @@ footer{background:#fffaf4;color:#28252d}
 .skills{background:#e5f5ef}
 .contact{background:#d8cef0;color:#244f40}
 .contact h2 em{color:#215b47;-webkit-text-stroke:0}
-.project-visual.almahra{background:linear-gradient(145deg,#d8cef0,#a994ce)}
+.project-visual.almahra{background:linear-gradient(145deg,#d8cef0,#a994ce)}.project-visual.music{background:linear-gradient(145deg,#b9ddd1,#6fae99)}.project-visual.music .browser{background:#fffaf4}.project-visual.music .screen span{color:#5a234d}
 .mark,.footer-mark{border:0;outline:0;background:transparent;overflow:visible}
 .mark img,.footer-mark img{filter:invert(1);mix-blend-mode:multiply;border:0;outline:0;background:transparent}
 

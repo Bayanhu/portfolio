@@ -1,0 +1,46 @@
+/* Mabahij logo display fix: show the complete original logo without circular cropping */
+.brand{overflow:visible!important}
+.brand img{
+  width:auto!important;
+  height:68px!important;
+  max-width:120px!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  background:transparent!important;
+}
+.logo-card{
+  padding:30px!important;
+  overflow:hidden!important;
+}
+.logo-card img{
+  width:auto!important;
+  height:86%!important;
+  max-width:88%!important;
+  max-height:88%!important;
+  border-radius:0!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  background:transparent!important;
+  transform:rotate(4deg)!important;
+}
+footer img{
+  width:auto!important;
+  height:64px!important;
+  max-width:110px!important;
+  border-radius:0!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  background:#fff!important;
+}
+@media(max-width:760px){
+  .brand img{height:54px!important;max-width:92px!important}
+  .logo-card{padding:24px!important}
+  .logo-card img{height:88%!important;max-width:90%!important;max-height:90%!important}
+  footer img{height:58px!important;max-width:100px!important}
+}
+@media(max-width:390px){
+  .brand img{height:50px!important;max-width:86px!important}
+  .logo-card{padding:20px!important}
+}

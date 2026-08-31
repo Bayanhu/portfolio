@@ -91,7 +91,194 @@ html[dir="rtl"] .ticker div{animation-direction:reverse}
 .contact-links{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid #8f81af;border-bottom:1px solid #8f81af;margin-bottom:50px}
 .contact-links a{min-height:145px;padding:28px 26px;display:grid;grid-template-columns:1fr auto;align-content:space-between;gap:26px;border-right:1px solid #8f81af;transition:background .25s,color .25s}
 .contact-links a:last-child{border-right:0}
+.contact-links a:hover{background:#fbf9ff;color:#215b47}@import "tailwindcss";@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@300;400;500;600;700;800&family=Noto+Kufi+Arabic:wght@400;500;600;700;800&display=swap');
+:root{--black:#080808;--white:#f5f5f2;--gray:#a3a3a0;--line:#292929;--blue:#5b68ff}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--white);font-family:Manrope,Arial,sans-serif}a{text-decoration:none;color:inherit}button{font:inherit}.section-no{font:12px "DM Mono";letter-spacing:1.5px;color:#777}em{font-style:normal;color:var(--blue)}header{height:86px;display:flex;align-items:center;justify-content:space-between;padding:0 4vw;border-bottom:1px solid var(--line);position:fixed;top:0;left:0;right:0;background:#080808db;backdrop-filter:blur(16px);z-index:40}.mark{width:57px;height:57px;overflow:hidden;display:block}.mark img{width:100%;height:100%;object-fit:cover}header nav{display:flex;gap:38px;text-transform:uppercase;font:11px "DM Mono";letter-spacing:1.5px}header nav a{padding:10px 0;border-bottom:1px solid transparent}header nav a:hover{border-color:white}.menu{display:none;border:0;background:none;color:white;text-transform:uppercase;font:11px "DM Mono"}
+.hero{min-height:100vh;padding:125px 4vw 50px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:45vw;height:45vw;border:1px solid #202020;border-radius:50%;right:-15vw;top:9vh;box-shadow:0 0 0 7vw #0c0c0c,0 0 0 7vw #0c0c0c inset;z-index:-1}.hero-top{display:flex;justify-content:space-between;text-transform:uppercase;font:10px "DM Mono";letter-spacing:1.4px;color:#929292}.hero-title{margin-top:7vh}.hero-title p{margin:0 0 8px;font:14px "DM Mono";color:#888}.hero h1{font-size:clamp(74px,12.7vw,205px);line-height:.76;letter-spacing:-.085em;margin:0;font-weight:800}.hero h1 em{-webkit-text-stroke:1px #6e77ff;color:transparent}.hero-bottom{display:flex;align-items:end;justify-content:space-between;margin-top:7vh}.hero-bottom>p{font-size:clamp(17px,1.7vw,25px);line-height:1.55;max-width:620px;color:#c8c8c4}.round-link{width:135px;height:135px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;text-align:center;text-transform:uppercase;font:11px "DM Mono";position:relative;transition:.3s}.round-link:hover{transform:rotate(8deg) scale(1.05)}.round-link b{position:absolute;right:20px;bottom:20px}.scroll-note{position:absolute;right:4vw;top:47%;transform:rotate(90deg) translateX(50%);transform-origin:right;font:9px "DM Mono";letter-spacing:2px;color:#777;display:flex;gap:12px}.scroll-note i{width:55px;border-top:1px solid #555}.ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;padding:24px 0}.ticker div{display:flex;gap:42px;align-items:center;width:max-content;animation:ticker 22s linear infinite}.ticker span{font-size:14px;letter-spacing:3px;white-space:nowrap}.ticker i{color:var(--blue)}@keyframes ticker{to{transform:translateX(-40%)}}
+.about{padding:130px 4vw;border-bottom:1px solid var(--line)}.about-copy{display:grid;grid-template-columns:1.2fr .8fr;gap:8vw;margin-top:45px}.about h2,.work h2,.skills h2{font-size:clamp(52px,7vw,110px);line-height:.9;letter-spacing:-.065em;margin:0}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-self:end}.about-grid p{line-height:1.85;color:#aaa;margin:0}.facts{display:grid;grid-template-columns:repeat(3,1fr);margin-top:100px;border-top:1px solid var(--line)}.facts article{padding:35px;border-right:1px solid var(--line);min-height:230px}.facts article:first-child{padding-left:0}.facts article:last-child{border:0}.facts article>b{font:11px "DM Mono";color:var(--blue)}.facts h3{font-size:23px;margin:45px 0 12px}.facts p{color:#888;line-height:1.7;font-size:14px}
+.work{background:var(--white);color:#101010;padding:130px 4vw}.work .section-no{color:#777}.work-head{display:grid;grid-template-columns:1.4fr .6fr;gap:7vw;align-items:end}.work-head h2{margin-top:35px}.work-head>p{line-height:1.8;color:#666;font-size:17px}.project-list{margin-top:100px}.project{display:grid;grid-template-columns:58% 42%;border-top:1px solid #c7c7c2;padding:55px 0;gap:5vw}.project:last-child{border-bottom:1px solid #c7c7c2}.project-visual{height:440px;padding:45px;display:flex;align-items:center;justify-content:center;overflow:hidden}.project-visual.almahra{background:#9e6848}.project-visual.araa{background:#123b45}.project-visual.nasek{background:#b49a58}.browser{width:92%;height:85%;background:#f5f2ec;border-radius:9px;box-shadow:0 28px 65px #0004;transform:rotate(-3deg);transition:.4s}.project:hover .browser{transform:rotate(0) scale(1.03)}.browser-bar{height:28px;display:flex;gap:5px;padding:10px}.browser-bar i{width:6px;height:6px;background:#bbb;border-radius:50%}.screen{height:calc(100% - 28px);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#1d1d1d;position:relative;text-align:center}.screen span{font-size:clamp(28px,4vw,64px);font-weight:800;letter-spacing:-3px}.screen small{text-transform:uppercase;font:9px "DM Mono";letter-spacing:2px;color:#777}.screen b{position:absolute;bottom:15px;right:18px;font:12px "DM Mono"}.project-info{padding:35px 4vw 30px 0;display:flex;flex-direction:column}.project-name{display:grid;grid-template-columns:35px 1fr 35px;gap:12px;align-items:start}.project-name>span{font:11px "DM Mono";color:#777;margin-top:9px}.project-name h3{font-size:clamp(34px,4vw,65px);letter-spacing:-3px;margin:0}.project-name small{text-transform:uppercase;font:10px "DM Mono";letter-spacing:1.4px;color:#777}.project-name>b{font-size:25px}.project-info>p{font-size:16px;line-height:1.8;color:#666;margin:auto 0 30px;max-width:520px}.tags{display:flex;gap:7px;flex-wrap:wrap}.tags span{border:1px solid #c8c8c2;border-radius:30px;padding:7px 13px;text-transform:uppercase;font:9px "DM Mono"}
+.skills{padding:130px 4vw}.skills-title{display:grid;grid-template-columns:1.4fr .6fr;gap:7vw;align-items:end;margin-top:45px}.skills-title>p{color:#999;line-height:1.8;font-size:17px}.skill-grid{display:grid;grid-template-columns:repeat(2,1fr);margin-top:90px;border-top:1px solid var(--line)}.skill-grid article{padding:45px 40px 55px 0;border-bottom:1px solid var(--line);position:relative}.skill-grid article:nth-child(odd){border-right:1px solid var(--line)}.skill-grid article:nth-child(even){padding-left:40px}.skill-grid span{font:10px "DM Mono";color:var(--blue)}.skill-grid h3{font-size:28px;margin:35px 0 13px}.skill-grid p{max-width:480px;color:#888;line-height:1.8}.tools{display:flex;flex-wrap:wrap;gap:9px;margin-top:60px}.tools span{border:1px solid #393939;border-radius:40px;padding:12px 20px;font:10px "DM Mono";letter-spacing:1px;color:#bbb}
+.contact{padding:140px 4vw;background:var(--blue);color:#090909}.contact>p{font:11px "DM Mono";letter-spacing:2px}.contact h2{font-size:clamp(63px,10vw,155px);line-height:.8;letter-spacing:-.075em;margin:50px 0 100px}.contact h2 em{color:transparent;-webkit-text-stroke:1.5px #111}.contact-row{border-top:1px solid #24264d;display:flex;justify-content:space-between;padding-top:25px;text-transform:uppercase;font:10px "DM Mono"}.contact-row a:hover{text-decoration:underline}footer{padding:50px 4vw;display:grid;grid-template-columns:90px 1fr auto;align-items:center;gap:30px}.footer-mark{width:76px;height:76px}.footer-mark img{width:100%;height:100%;object-fit:cover}.footer-mark+p{font-size:18px}.footer-mark+p span{font:10px "DM Mono";color:#777;text-transform:uppercase;letter-spacing:1px}footer>small{font:9px "DM Mono";color:#666}
+@media(max-width:900px){header nav{display:none;position:absolute;top:86px;left:0;right:0;background:#080808;padding:35px 4vw;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}header nav.open{display:flex}.menu{display:block}.hero h1{font-size:16vw}.hero-bottom{align-items:flex-start}.about-copy,.work-head,.skills-title{grid-template-columns:1fr}.about-grid{margin-top:20px}.project{grid-template-columns:1fr}.project-info{padding-right:0;min-height:300px}.project-info>p{margin:50px 0}.project-visual{height:400px}.facts{grid-template-columns:1fr}.facts article{border-right:0;border-bottom:1px solid var(--line);padding-left:0}.contact h2{font-size:13vw}}@media(max-width:600px){header{height:72px}.mark{width:48px;height:48px}header nav{top:72px}.hero{padding-top:110px}.hero-top span:last-child{display:none}.hero h1{font-size:18.5vw}.hero-bottom{flex-direction:column;gap:35px}.hero-bottom>p{font-size:16px}.round-link{width:110px;height:110px;align-self:flex-end}.scroll-note{display:none}.about,.work,.skills{padding:90px 5vw}.about h2,.work h2,.skills h2{font-size:14vw}.about-grid{grid-template-columns:1fr}.facts{margin-top:65px}.project-list{margin-top:65px}.project{padding:35px 0}.project-visual{height:280px;padding:25px}.project-name h3{font-size:35px;letter-spacing:-2px}.skill-grid{grid-template-columns:1fr}.skill-grid article:nth-child(odd){border-right:0}.skill-grid article:nth-child(even){padding-left:0}.contact{padding:90px 5vw}.contact h2{font-size:15vw;margin:40px 0 70px}.contact-row{flex-direction:column;gap:20px}footer{grid-template-columns:65px 1fr}footer>small{grid-column:1/3}}
+
+/* Light, lively portfolio theme */
+:root{--black:#fffaf4;--white:#fffdf9;--gray:#6f6b73;--line:#ddd7e8;--blue:#ff7f66}
+body{background:#fffaf4;color:#28252d}
+header{background:#fffaf4e8;border-color:#e5dce9}
+header nav a,.menu{color:#28252d}
+.hero{background:linear-gradient(135deg,#fffaf4 0%,#f7efff 52%,#e8f7f1 100%)}
+.hero:before{border-color:#d9c8f0;box-shadow:0 0 0 7vw #f5ebff,0 0 0 7vw #f5ebff inset;opacity:.75}
+.hero-title p,.hero-top,.scroll-note,.section-no{color:#6f6876}
+.hero h1{color:#27232d}
+.hero h1 em{-webkit-text-stroke:1.4px #ff7f66;color:transparent}
+.hero-bottom>p{color:#58525f}
+.ticker{background:#ffe8df;border-color:#f3c8ba}
+.ticker i{color:#ff7f66}
+.about{background:#f2ecff;border-color:#d9ceed}
+.about-grid p,.facts p{color:#66606c}
+.facts{border-color:#d7cce4}
+.facts article{border-color:#d7cce4}
+.facts article>b{color:#ff7257}
+.work{background:#fffdf9;color:#28252d}
+.project-visual.almahra{background:linear-gradient(145deg,#f3c6a6,#c8906e)}
+.skills{background:#e8f7f1}
+.skills-title>p,.skill-grid p{color:#5c6964}
+.skill-grid,.skill-grid article{border-color:#c7ded5}
+.skill-grid span{color:#ee6d55}
+.tools span{border-color:#aecdc1;color:#465a52;background:#ffffff80}
+.contact{background:#ff8c73;color:#28252d}
+.contact h2 em{-webkit-text-stroke:1.5px #40343d}
+footer{background:#fffaf4;color:#28252d}
+.footer-mark+p span,footer>small{color:#777078}
+@media(max-width:900px){header nav{background:#fffaf4;border-color:#e5dce9}}
+
+/* Refined two-colour palette: diwani green, lavender and mint */
+:root{--blue:#7b69b8}
+.hero{background:linear-gradient(135deg,#fbf9ff 0%,#f0eaff 52%,#e5f5ef 100%)}
+.hero:before{border-color:#cdbfe4;box-shadow:0 0 0 7vw #eee7f8,0 0 0 7vw #eee7f8 inset}
+.hero h1,.hero h1 em{color:#215b47;-webkit-text-stroke:0}
+.ticker{background:#eee7fa;border-color:#d3c7e5}
+.ticker i,.facts article>b,.skill-grid span{color:#6e5aa8}
+.about{background:#f0eaff}
+.work{background:#fbf9ff}
+.skills{background:#e5f5ef}
+.contact{background:#d8cef0;color:#244f40}
+.contact h2 em{color:#215b47;-webkit-text-stroke:0}
+.project-visual.almahra{background:linear-gradient(145deg,#d8cef0,#a994ce)}.project-visual.music{background:linear-gradient(145deg,#b9ddd1,#6fae99)}.project-visual.music .browser{background:#fffaf4}.project-visual.music .screen span{color:#5a234d}.project-visual.mabahij{background:linear-gradient(145deg,#6b3377,#d61b87)}.project-visual.mabahij .browser{background:#fff8fc}.project-visual.mabahij .screen span{color:#6b265f}
+.mark,.footer-mark{border:0;outline:0;background:transparent;overflow:visible}
+.mark img,.footer-mark img{filter:invert(1);mix-blend-mode:multiply;border:0;outline:0;background:transparent}
+
+/* Arabic / English language switcher */
+.header-actions{display:flex;align-items:center;gap:26px}
+.language-toggle{border:1px solid var(--line);border-radius:30px;background:transparent;color:#28252d;padding:9px 15px;cursor:pointer;font:10px "DM Mono";letter-spacing:.5px;transition:.25s}
+.language-toggle:hover{background:var(--blue);border-color:var(--blue);color:#fff}
+html[dir="rtl"] body{font-family:Tahoma,"Segoe UI",Arial,sans-serif}
+html[dir="rtl"] .hero-title,html[dir="rtl"] .about-copy,html[dir="rtl"] .work-head,html[dir="rtl"] .skills-title,html[dir="rtl"] .project-info{text-align:right}
+html[dir="rtl"] .hero h1{letter-spacing:-.035em}
+html[dir="rtl"] .project-info{padding:35px 0 30px 4vw}
+html[dir="rtl"] .facts article{border-right:0;border-left:1px solid var(--line)}
+html[dir="rtl"] .facts article:first-child{padding-left:35px;padding-right:0}
+html[dir="rtl"] .facts article:last-child{border-left:0}
+html[dir="rtl"] .skill-grid article:nth-child(odd){border-right:0;border-left:1px solid var(--line);padding-left:40px;padding-right:0}
+html[dir="rtl"] .skill-grid article:nth-child(even){padding-right:40px;padding-left:0}
+html[dir="rtl"] .screen b{right:auto;left:18px}
+html[dir="rtl"] .scroll-note{right:auto;left:4vw;transform:rotate(-90deg) translateX(-50%);transform-origin:left}
+html[dir="rtl"] .ticker div{animation-direction:reverse}
+@media(max-width:900px){
+  .header-actions{gap:14px}
+  html[dir="rtl"] header nav{align-items:flex-start}
+  html[dir="rtl"] .project-info{padding-left:0}
+  html[dir="rtl"] .facts article{border-left:0}
+  html[dir="rtl"] .facts article:first-child{padding-left:0}
+  html[dir="rtl"] .skill-grid article:nth-child(odd){border-left:0;padding-left:0}
+  html[dir="rtl"] .skill-grid article:nth-child(even){padding-right:0}
+}
+@media(max-width:600px){.language-toggle{padding:8px 11px;font-size:9px}.header-actions{gap:8px}}
+
+.contact-row{gap:24px;flex-wrap:wrap}
+
+/* Classic bilingual controls and contact cards */
+.language-toggle{min-width:96px;display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:10px 16px;background:#fbf9ff;border:1px solid #b8abd2;color:#215b47;border-radius:2px;font-family:Manrope,Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:.7px;box-shadow:3px 3px 0 #d8cef0;transition:transform .2s,box-shadow .2s,background .2s}
+.language-toggle:hover{background:#e5f5ef;border-color:#215b47;color:#215b47;transform:translate(-2px,-2px);box-shadow:5px 5px 0 #d8cef0}
+.language-symbol{font-size:10px;color:#7b69b8}
+.contact-intro{max-width:620px;margin:-60px 0 55px;font-size:17px;line-height:1.8;color:#3b574d}
+.contact-links{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid #8f81af;border-bottom:1px solid #8f81af;margin-bottom:50px}
+.contact-links a{min-height:145px;padding:28px 26px;display:grid;grid-template-columns:1fr auto;align-content:space-between;gap:26px;border-right:1px solid #8f81af;transition:background .25s,color .25s}
+.contact-links a:last-child{border-right:0}
 .contact-links a:hover{background:#fbf9ff;color:#215b47}
+.contact-links small{grid-column:1/3;text-transform:uppercase;font:10px "DM Mono";letter-spacing:1.3px;opacity:.72}
+.contact-links strong{font-size:clamp(16px,1.7vw,24px);font-weight:600;letter-spacing:-.02em}
+.contact-links b{font-size:22px;font-weight:400}
+.contact-row span{opacity:.75}
+html[dir="rtl"] body{font-family:"Noto Kufi Arabic",Tahoma,"Segoe UI",sans-serif}
+html[dir="rtl"] .language-toggle{font-family:Manrope,"Noto Kufi Arabic",sans-serif;letter-spacing:0}
+html[dir="rtl"] .about h2,html[dir="rtl"] .work h2,html[dir="rtl"] .skills h2,html[dir="rtl"] .contact h2{line-height:1.22;letter-spacing:-.045em}
+html[dir="rtl"] .hero-bottom>p,html[dir="rtl"] .about-grid p,html[dir="rtl"] .facts p,html[dir="rtl"] .work-head>p,html[dir="rtl"] .project-info>p,html[dir="rtl"] .skills-title>p,html[dir="rtl"] .skill-grid p,html[dir="rtl"] .contact-intro{line-height:2}
+html[dir="rtl"] .section-no,html[dir="rtl"] .hero-top,html[dir="rtl"] .ticker span{font-family:"Noto Kufi Arabic",sans-serif;letter-spacing:0}
+html[dir="rtl"] .contact-links a{border-right:0;border-left:1px solid #8f81af;text-align:right}
+html[dir="rtl"] .contact-links a:last-child{border-left:0}
+html[dir="rtl"] .contact-links small{font-family:"Noto Kufi Arabic",sans-serif;letter-spacing:0}
+@media(max-width:800px){.contact-links{grid-template-columns:1fr}.contact-links a{border-right:0;border-left:0;border-bottom:1px solid #8f81af;min-height:120px}.contact-links a:last-child{border-bottom:0}html[dir="rtl"] .contact-links a{border-left:0}.contact-intro{margin:-25px 0 40px}}
+@media(max-width:600px){.language-toggle{min-width:82px;padding:8px 10px;box-shadow:2px 2px 0 #d8cef0}.language-symbol{display:none}.contact-links strong{font-size:16px}.contact h2{margin-bottom:55px}}
+
+/* Polished phone layout */
+@media(max-width:600px){
+  body{overflow-x:hidden}
+  header{height:74px;padding:0 5vw}
+  .mark{width:45px;height:45px}
+  .header-actions{gap:12px}
+  .language-toggle{min-width:76px;height:36px;padding:7px 10px;font-size:10px;background:#fbf9ff}
+  .menu{display:block;padding:8px 0;color:#215b47;font-size:10px;letter-spacing:1px}
+  header nav{top:74px;padding:28px 5vw;gap:22px;background:#fbf9fff5;border-bottom:1px solid #d8cef0;box-shadow:0 14px 35px #49386b18}
+  header nav a{width:100%;padding:9px 0;font-size:11px;color:#215b47}
+  .hero{min-height:100svh;padding:108px 5vw 38px}
+  .hero-top{font-size:9px;line-height:1.7}
+  .hero-title{margin-top:auto;margin-bottom:auto}
+  .hero-title p{margin-bottom:14px;font-size:12px}
+  .hero h1{font-size:clamp(62px,19vw,92px);line-height:.82;letter-spacing:-.065em}
+  .hero-bottom{margin-top:30px;gap:0}
+  .hero-bottom>p{max-width:92%;font-size:15px;line-height:1.75}
+  .ticker{padding:18px 0}
+  .ticker div{gap:28px}
+  .ticker span{font-size:11px;letter-spacing:2px}
+  .about,.work,.skills{padding:82px 5vw}
+  .section-no{font-size:10px}
+  .about-copy,.skills-title{margin-top:32px}
+  .about h2,.work h2,.skills h2{font-size:clamp(43px,13vw,62px);line-height:.98;letter-spacing:-.045em}
+  .about-grid{gap:18px;margin-top:36px}
+  .about-grid p,.work-head>p,.skills-title>p{font-size:14px;line-height:1.85}
+  .facts{margin-top:55px}
+  .facts article{min-height:auto;padding:28px 0}
+  .facts h3{margin:25px 0 10px;font-size:20px}
+  .work-head{gap:32px}
+  .work-head h2{margin-top:28px}
+  .project-list{margin-top:55px}
+  .project{gap:0;padding:28px 0}
+  .project-visual{height:290px;padding:27px}
+  .browser{width:96%;height:88%}
+  .screen span{font-size:34px;letter-spacing:-1.5px}
+  .project-info{min-height:auto;padding:30px 0 10px}
+  .project-name{grid-template-columns:26px 1fr 25px;gap:9px}
+  .project-name h3{font-size:32px;line-height:1.1;letter-spacing:-1.5px}
+  .project-info>p{margin:30px 0 24px;font-size:14px;line-height:1.8}
+  .skills-title{gap:30px}
+  .skill-grid{margin-top:55px}
+  .skill-grid article{padding:30px 0 34px}
+  .skill-grid h3{font-size:22px;margin:24px 0 10px}
+  .skill-grid p{font-size:14px;margin-bottom:0}
+  .tools{margin-top:42px;gap:7px}
+  .tools span{padding:9px 13px;font-size:9px}
+  .contact{padding:82px 5vw}
+  .contact>p{font-size:10px}
+  .contact h2{font-size:clamp(47px,14vw,68px);line-height:.92;letter-spacing:-.05em;margin:35px 0 45px}
+  .contact-intro{margin:0 0 35px;font-size:14px;line-height:1.85}
+  .contact-links{margin-bottom:35px}
+  .contact-links a{min-height:105px;padding:22px 18px;gap:18px}
+  .contact-links small{font-size:9px}
+  .contact-links strong{font-size:15px;letter-spacing:0}
+  .contact-row{flex-direction:column;align-items:flex-start;gap:18px;font-size:9px;line-height:1.7}
+  footer{padding:38px 5vw;grid-template-columns:55px 1fr;gap:18px}
+  .footer-mark{width:55px;height:55px}
+  .footer-mark+p{font-size:16px}
+  footer>small{grid-column:1/3;line-height:1.6}
+  html[dir="rtl"] .hero h1{letter-spacing:-.035em}
+  html[dir="rtl"] .about h2,html[dir="rtl"] .work h2,html[dir="rtl"] .skills h2,html[dir="rtl"] .contact h2{font-size:clamp(37px,10.8vw,54px);line-height:1.45;letter-spacing:-.025em}
+  html[dir="rtl"] .project-name h3{font-size:27px;line-height:1.5;letter-spacing:0}
+  html[dir="rtl"] .contact-links a{text-align:right}
+}
+
+@media(max-width:370px){
+  .header-actions{gap:8px}
+  .language-toggle{min-width:68px;padding:6px 8px}
+  .hero h1{font-size:18vw}
+  .project-visual{height:255px;padding:20px}
+  .contact-links strong{font-size:14px}
+}
+
+/* Minimal language label — matches the Menu link */
+.language-toggle,.language-toggle:hover{min-width:auto;height:auto;padding:8px 0;border:0;border-radius:0;background:transparent;box-shadow:none;color:#215b47;transform:none;font:10px "DM Mono";font-weight:400;letter-spacing:1px;text-transform:uppercase}
+.language-symbol{display:none}
+html[dir="rtl"] .language-toggle,html[dir="rtl"] .language-toggle:hover{font:10px "Noto Kufi Arabic",sans-serif;letter-spacing:0}
+@media(max-width:600px){.language-toggle,.language-toggle:hover{min-width:auto;height:auto;padding:8px 0;border:0;background:transparent;box-shadow:none;font-size:10px}}
 .contact-links small{grid-column:1/3;text-transform:uppercase;font:10px "DM Mono";letter-spacing:1.3px;opacity:.72}
 .contact-links strong{font-size:clamp(16px,1.7vw,24px);font-weight:600;letter-spacing:-.02em}
 .contact-links b{font-size:22px;font-weight:400}
